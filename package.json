@@ -1,0 +1,28 @@
+{
+  "name": "astadeus",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^4.3.0",
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.36.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-is": "^19.2.4",
+    "react-leaflet": "^5.0.0",
+    "recharts": "^3.8.0",
+    "tailwindcss": "^4.2.1"
+  }
+}
