@@ -7,49 +7,49 @@ import {
 const features = [
   {
     icon: Navigation,
-    name: 'Voyage Optimization',
+    name: 'Quantum Voyage AI',
     description: 'AI-powered route planning evaluating 80M+ combinations for optimal fuel, emissions, and timing.',
     color: 'from-blue-500 to-cyan-500'
   },
   {
     icon: Ship,
-    name: 'SMARTShip™',
+    name: 'NeuroShip Sentinel',
     description: 'Industrial IoT platform with 5,000+ real-time data points and predictive maintenance.',
     color: 'from-cyan-500 to-teal-500'
   },
   {
     icon: BarChart3,
-    name: 'Vessel Optimization',
+    name: 'HullMatrix Insights',
     description: 'Monitor hull performance, fuel efficiency, and system-level vessel insights.',
     color: 'from-teal-500 to-green-500'
   },
   {
     icon: Fuel,
-    name: 'Emissions Analytics',
+    name: 'EcoMetrics Ledger',
     description: 'Comprehensive tracking and compliance reporting for CII, EU ETS, and FuelEU.',
     color: 'from-green-500 to-emerald-500'
   },
   {
     icon: FileText,
-    name: 'Vessel Reporting',
+    name: 'BridgeSync Cloud',
     description: 'Cloud-based reporting with 200+ validation points and offline support.',
     color: 'from-emerald-500 to-teal-500'
   },
   {
     icon: Mail,
-    name: 'Charter Select',
+    name: 'TradeBridge ML',
     description: 'ML-powered email parsing for automatic cargo and position extraction.',
     color: 'from-violet-500 to-purple-500'
   },
   {
     icon: DollarSign,
-    name: 'Bunker Procurement',
+    name: 'BunkerOracle Hub',
     description: 'Real-time pricing from 170+ ports with arbitrage and market indicators.',
     color: 'from-orange-500 to-amber-500'
   },
   {
     icon: FileCheck,
-    name: 'eBDN',
+    name: 'HyperLedger eBDN',
     description: 'Digital Bunker Delivery Notes with secure, tamper-proof documentation.',
     color: 'from-rose-500 to-pink-500'
   }

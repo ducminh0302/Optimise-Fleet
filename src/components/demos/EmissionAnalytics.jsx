@@ -70,7 +70,7 @@ export default function EmissionAnalytics() {
             <BarChart3 className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted">Interactive Demo</span>
           </div>
-          <h2 className="section-title mb-4">Emissions Analytics</h2>
+          <h2 className="section-title mb-4">EcoMetrics Ledger</h2>
           <p className="section-subtitle mx-auto">
             Track CII ratings, monitor compliance, and analyze CO₂ emissions across your fleet.
           </p>

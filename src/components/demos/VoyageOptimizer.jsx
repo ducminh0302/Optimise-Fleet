@@ -69,7 +69,7 @@ export default function VoyageOptimizer() {
             <Navigation className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted">Interactive Demo</span>
           </div>
-          <h2 className="section-title mb-4">Voyage Optimization</h2>
+          <h2 className="section-title mb-4">Quantum Voyage AI</h2>
           <p className="section-subtitle mx-auto">
             Select a route strategy and see real-time calculations for fuel, emissions, and cost.
           </p>

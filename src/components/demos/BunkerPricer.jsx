@@ -59,7 +59,7 @@ export default function BunkerPricer() {
             <Fuel className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted">Interactive Demo</span>
           </div>
-          <h2 className="section-title mb-4">Bunker Pricer</h2>
+          <h2 className="section-title mb-4">BunkerOracle Hub</h2>
           <p className="section-subtitle mx-auto">
             Real-time fuel pricing with market indicators and best-buy signals across 170+ ports.
           </p>

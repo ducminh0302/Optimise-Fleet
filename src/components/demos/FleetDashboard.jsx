@@ -91,7 +91,7 @@ export default function FleetDashboard() {
             <Ship className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted">Interactive Demo</span>
           </div>
-          <h2 className="section-title mb-4">Fleet Dashboard</h2>
+          <h2 className="section-title mb-4">Fleet Command Center</h2>
           <p className="section-subtitle mx-auto">
             Real-time fleet monitoring with live data updates every 3 seconds.
           </p>

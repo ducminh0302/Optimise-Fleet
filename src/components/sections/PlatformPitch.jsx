@@ -8,42 +8,42 @@ import {
 const modules = [
   {
     id: 'voyage',
-    name: 'Voyage Optimization',
+    name: 'Quantum Voyage AI',
     icon: Navigation,
     description: 'AI-powered route planning that evaluates 80M+ combinations to find the optimal balance of speed, fuel, and emissions.',
     features: ['Real-time weather updates', 'Fuel model predictions', 'ECDIS export', 'Multi-objective optimization']
   },
   {
     id: 'smartship',
-    name: 'SMARTShip™',
+    name: 'NeuroShip Sentinel',
     icon: Ship,
     description: 'Industrial IoT platform collecting 5,000+ data points from your vessels for real-time monitoring and predictive insights.',
     features: ['Real-time dashboards', 'Predictive maintenance', 'Automated alerts', 'Hull performance tracking']
   },
   {
     id: 'emissions',
-    name: 'Emissions Analytics',
+    name: 'EcoMetrics Ledger',
     icon: BarChart3,
     description: 'Comprehensive emissions tracking and compliance reporting for IMO CII, EU ETS, and FuelEU regulations.',
     features: ['CII rating forecasts', 'Audit-ready reports', 'Fleet benchmarking', 'Regulatory compliance']
   },
   {
     id: 'bunker',
-    name: 'Bunker Procurement',
+    name: 'BunkerOracle Hub',
     icon: Fuel,
     description: 'Real-time pricing from 170+ ports with arbitrage opportunities and market momentum indicators.',
     features: ['Price forecasting', 'RSI/MACD indicators', 'Best buy alerts', 'Supplier management']
   },
   {
     id: 'reporting',
-    name: 'Vessel Reporting',
+    name: 'BridgeSync Cloud',
     icon: FileText,
     description: 'Cloud-based reporting with 200+ validation points, offline support, and seamless data synchronization.',
     features: ['200+ validations', 'Offline capable', 'Multi-user access', 'Auto-population']
   },
   {
     id: 'charter',
-    name: 'Charter Select',
+    name: 'TradeBridge ML',
     icon: Mail,
     description: 'ML-powered email extraction that automatically parses cargo and position information from communications.',
     features: ['Auto email parsing', 'Data extraction', 'API integration', 'Workflow automation']
