@@ -1,7 +1,6 @@
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Hero from './components/sections/Hero'
-import TrustBar from './components/sections/TrustBar'
 import PlatformPitch from './components/sections/PlatformPitch'
 import VoyageOptimizer from './components/demos/VoyageOptimizer'
 import FleetDashboard from './components/demos/FleetDashboard'
@@ -20,7 +19,6 @@ function App() {
       
       <main className="pt-24">
         <Hero />
-        <TrustBar />
         <PlatformPitch />
         
         <VoyageOptimizer />
