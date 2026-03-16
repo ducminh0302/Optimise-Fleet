@@ -15,10 +15,10 @@ import CTASection from './components/sections/CTASection'
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-text overflow-x-hidden">
+    <div className="min-h-screen bg-background text-text overflow-x-hidden selection:bg-primary/30">
       <Navbar />
       
-      <main>
+      <main className="pt-24">
         <Hero />
         <TrustBar />
         <PlatformPitch />

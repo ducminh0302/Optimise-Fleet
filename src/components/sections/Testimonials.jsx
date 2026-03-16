@@ -52,8 +52,8 @@ export default function Testimonials() {
   }
 
   return (
-    <section className="py-24 bg-background">
-      <div className="max-w-5xl mx-auto px-6">
+    <section className="py-24 bg-background w-full">
+      <div className="max-w-[1400px] w-full mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,19 +74,19 @@ export default function Testimonials() {
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <div className="glass rounded-2xl p-8 md:p-12 min-h-[280px] flex items-center">
+          <div className="glass rounded-2xl p-8 md:p-16 min-h-[360px] flex items-center justify-center relative shadow-2xl">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4 }}
-                className="text-center"
+                className="text-center w-full px-12 md:px-24 relative z-10"
               >
                 <Quote className="w-12 h-12 text-primary/30 mx-auto mb-6" />
                 
-                <blockquote className="text-xl md:text-2xl text-text leading-relaxed mb-8 max-w-3xl mx-auto">
+                <blockquote className="text-2xl md:text-3xl lg:text-4xl text-text leading-[1.6] mb-10 max-w-4xl mx-auto font-medium">
                   "{testimonials[current].quote}"
                 </blockquote>
                 
@@ -104,18 +104,18 @@ export default function Testimonials() {
 
           <button
             onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-card border border-glass-border flex items-center justify-center text-muted hover:text-text hover:border-primary transition-colors cursor-pointer"
+            className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-card border border-glass-border flex items-center justify-center text-muted hover:text-text hover:border-primary transition-all cursor-pointer z-20 hover:scale-110 shadow-lg"
             aria-label="Previous testimonial"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-6 h-6" />
           </button>
           
           <button
             onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-card border border-glass-border flex items-center justify-center text-muted hover:text-text hover:border-primary transition-colors cursor-pointer"
+            className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-card border border-glass-border flex items-center justify-center text-muted hover:text-text hover:border-primary transition-all cursor-pointer z-20 hover:scale-110 shadow-lg"
             aria-label="Next testimonial"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-6 h-6" />
           </button>
         </div>
 

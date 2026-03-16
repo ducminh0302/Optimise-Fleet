@@ -20,9 +20,9 @@ export default function TrustBar() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <p className="text-muted text-sm uppercase tracking-wider">
+          <h2 className="text-muted text-sm font-semibold uppercase tracking-[0.2em]">
             Trusted by 200+ commercial operators worldwide
-          </p>
+          </h2>
         </motion.div>
 
         <motion.div
@@ -41,8 +41,8 @@ export default function TrustBar() {
               transition={{ duration: 0.3, delay: 0.1 * index }}
               className="group"
             >
-              <div className="w-24 h-12 rounded-lg bg-card/50 border border-glass-border flex items-center justify-center text-muted group-hover:text-text group-hover:border-primary/50 transition-all duration-300 cursor-pointer">
-                <span className="font-bold text-lg tracking-wide">{company.initials}</span>
+              <div className="w-28 h-14 rounded-xl glass bg-surface/30 flex items-center justify-center text-muted group-hover:text-text group-hover:border-primary/50 group-hover:bg-surface/60 transition-all duration-300 cursor-pointer group-hover:-translate-y-1 group-hover:shadow-[0_0_20px_rgba(14,165,233,0.15)]">
+                <span className="font-bold text-xl tracking-widest">{company.initials}</span>
               </div>
             </motion.div>
           ))}

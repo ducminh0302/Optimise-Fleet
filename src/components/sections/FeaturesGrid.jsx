@@ -101,17 +101,19 @@ export default function FeaturesGrid() {
             <motion.div
               key={feature.name}
               variants={itemVariants}
-              className="group card p-6 cursor-pointer"
+              className="group card p-8 cursor-pointer relative overflow-hidden"
             >
-              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className="w-6 h-6 text-white" />
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              
+              <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                <feature.icon className="w-7 h-7 text-white" />
               </div>
               
-              <h3 className="text-lg font-semibold text-text mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-bold text-text mb-3 group-hover:text-primary transition-colors tracking-tight">
                 {feature.name}
               </h3>
               
-              <p className="text-sm text-muted leading-relaxed mb-4">
+              <p className="text-base text-muted leading-relaxed mb-6 flex-grow">
                 {feature.description}
               </p>
               

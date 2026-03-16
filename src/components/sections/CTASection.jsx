@@ -64,13 +64,13 @@ export default function CTASection() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-surface relative overflow-hidden">
-      <div className="absolute inset-0">
+    <section id="contact" className="py-24 bg-surface relative overflow-hidden w-full">
+      <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[100px]" />
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+      <div className="max-w-[1400px] w-full mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -96,6 +96,7 @@ export default function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full max-w-4xl mx-auto"
         >
           <div className="glass rounded-2xl p-8 md:p-10">
             <AnimatePresence mode="wait">
@@ -125,8 +126,8 @@ export default function CTASection() {
                   className="space-y-6"
                 >
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-text mb-2">
+                    <div className="flex flex-col">
+                      <label htmlFor="email" className="block text-sm font-medium text-text mb-2 text-left">
                         Work Email *
                       </label>
                       <input
@@ -136,17 +137,17 @@ export default function CTASection() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="you@company.com"
-                        className={`w-full px-4 py-3 bg-card border rounded-lg text-text placeholder:text-subtle focus:outline-none focus:border-primary transition-colors ${
-                          errors.email ? 'border-danger' : 'border-glass-border'
+                        className={`w-full px-4 py-3 bg-card border rounded-xl text-text placeholder:text-subtle focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors ${
+                          errors.email ? 'border-danger focus:border-danger focus:ring-danger' : 'border-glass-border'
                         }`}
                       />
                       {errors.email && (
-                        <p className="text-danger text-xs mt-1">{errors.email}</p>
+                        <p className="text-danger text-xs mt-1 text-left">{errors.email}</p>
                       )}
                     </div>
 
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-text mb-2">
+                    <div className="flex flex-col">
+                      <label htmlFor="company" className="block text-sm font-medium text-text mb-2 text-left">
                         Company Name *
                       </label>
                       <input
@@ -156,18 +157,18 @@ export default function CTASection() {
                         value={formData.company}
                         onChange={handleChange}
                         placeholder="Your shipping company"
-                        className={`w-full px-4 py-3 bg-card border rounded-lg text-text placeholder:text-subtle focus:outline-none focus:border-primary transition-colors ${
-                          errors.company ? 'border-danger' : 'border-glass-border'
+                        className={`w-full px-4 py-3 bg-card border rounded-xl text-text placeholder:text-subtle focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors ${
+                          errors.company ? 'border-danger focus:border-danger focus:ring-danger' : 'border-glass-border'
                         }`}
                       />
                       {errors.company && (
-                        <p className="text-danger text-xs mt-1">{errors.company}</p>
+                        <p className="text-danger text-xs mt-1 text-left">{errors.company}</p>
                       )}
                     </div>
                   </div>
 
-                  <div>
-                    <label htmlFor="role" className="block text-sm font-medium text-text mb-2">
+                  <div className="flex flex-col">
+                    <label htmlFor="role" className="block text-sm font-medium text-text mb-2 text-left">
                       Your Role *
                     </label>
                     <select
@@ -175,8 +176,8 @@ export default function CTASection() {
                       name="role"
                       value={formData.role}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 bg-card border rounded-lg text-text focus:outline-none focus:border-primary transition-colors cursor-pointer ${
-                        errors.role ? 'border-danger' : 'border-glass-border'
+                      className={`w-full px-4 py-3 bg-card border rounded-xl text-text focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors cursor-pointer appearance-none ${
+                        errors.role ? 'border-danger focus:border-danger focus:ring-danger' : 'border-glass-border'
                       } ${!formData.role ? 'text-subtle' : ''}`}
                     >
                       <option value="" disabled>Select your role</option>
@@ -185,14 +186,14 @@ export default function CTASection() {
                       ))}
                     </select>
                     {errors.role && (
-                      <p className="text-danger text-xs mt-1">{errors.role}</p>
+                      <p className="text-danger text-xs mt-1 text-left">{errors.role}</p>
                     )}
                   </div>
 
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full btn-cta flex items-center justify-center gap-2 py-4 text-base disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="w-full btn-cta flex items-center justify-center gap-2 py-4 rounded-xl text-lg font-bold disabled:opacity-70 disabled:cursor-not-allowed mt-4 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40"
                   >
                     {isSubmitting ? (
                       <>
@@ -202,7 +203,7 @@ export default function CTASection() {
                     ) : (
                       <>
                         Book Your Demo
-                        <ArrowRight className="w-5 h-5" />
+                        <ArrowRight className="w-6 h-6" />
                       </>
                     )}
                   </button>

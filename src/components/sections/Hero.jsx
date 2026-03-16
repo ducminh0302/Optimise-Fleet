@@ -40,8 +40,8 @@ function AnimatedCounter({ value, suffix = '', decimals = 0 }) {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-background">
+    <section className="relative min-h-[calc(100vh-6rem)] py-12 lg:py-20 overflow-hidden flex flex-col justify-center">
+      <div className="absolute inset-0 bg-background z-0">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] animate-gradient" />
           <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-accent/20 rounded-full blur-[100px] animate-gradient" style={{ animationDelay: '-4s' }} />
@@ -54,8 +54,8 @@ export default function Hero() {
         }} />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20">
-        <div className="text-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 w-full flex-grow flex flex-col justify-center">
+        <div className="text-center md:pt-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight"
           >
             <span className="text-text">Make Maritime</span>
             <br />
@@ -81,7 +81,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted max-w-2xl mx-auto mb-10"
+            className="text-lg md:text-xl text-muted max-w-3xl mx-auto mb-10 leading-relaxed font-normal"
           >
             Optimize voyages, reduce emissions, and maximize fleet efficiency with 
             our all-in-one platform powered by AI and real-time IoT data.

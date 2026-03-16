@@ -78,7 +78,7 @@ export default function PlatformPitch() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-1"
+            className="lg:col-span-1 flex flex-col justify-center"
           >
             <div className="space-y-2">
               {modules.map((module) => (
@@ -100,14 +100,14 @@ export default function PlatformPitch() {
                       activeModule.id === module.id ? 'text-primary' : 'text-muted'
                     }`} />
                   </div>
-                  <span className={`font-medium ${
-                    activeModule.id === module.id ? 'text-text' : 'text-muted'
+                  <span className={`font-semibold text-lg transition-colors ${
+                    activeModule.id === module.id ? 'text-primary' : 'text-muted group-hover:text-text'
                   }`}>
                     {module.name}
                   </span>
-                  {activeModule.id === module.id && (
-                    <ChevronRight className="w-4 h-4 text-primary ml-auto" />
-                  )}
+                  <ChevronRight className={`w-5 h-5 ml-auto transition-all ${
+                    activeModule.id === module.id ? 'text-primary opacity-100 translate-x-0' : 'text-muted opacity-0 -translate-x-2'
+                  }`} />
                 </button>
               ))}
             </div>
@@ -129,14 +129,14 @@ export default function PlatformPitch() {
                 transition={{ duration: 0.3 }}
                 className="card p-8"
               >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center">
-                    <activeModule.icon className="w-7 h-7 text-primary" />
+                <div className="flex items-center gap-5 mb-8">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center border border-primary/20 shadow-[0_0_30px_rgba(14,165,233,0.1)]">
+                    <activeModule.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-text">{activeModule.name}</h3>
+                  <h3 className="text-3xl font-extrabold text-text tracking-tight">{activeModule.name}</h3>
                 </div>
 
-                <p className="text-muted text-lg mb-8 leading-relaxed">
+                <p className="text-muted text-lg mb-10 leading-relaxed max-w-2xl">
                   {activeModule.description}
                 </p>
 
@@ -147,10 +147,10 @@ export default function PlatformPitch() {
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.2, delay: index * 0.1 }}
-                      className="flex items-center gap-3"
+                      className="flex items-center gap-4 bg-surface/30 p-4 rounded-xl border border-glass-border hover:border-primary/30 transition-colors"
                     >
-                      <div className="w-2 h-2 rounded-full bg-accent shrink-0" />
-                      <span className="text-text">{feature}</span>
+                      <div className="w-2 h-2 rounded-full bg-accent shrink-0 shadow-[0_0_10px_rgba(16,185,129,0.8)]" />
+                      <span className="text-text font-medium">{feature}</span>
                     </motion.div>
                   ))}
                 </div>

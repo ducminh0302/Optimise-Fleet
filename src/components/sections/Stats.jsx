@@ -113,9 +113,10 @@ export default function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-center"
+              className="card p-8 text-center relative group overflow-hidden"
             >
-              <div className="text-5xl md:text-6xl font-bold gradient-text mb-2">
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="text-5xl md:text-6xl font-extrabold gradient-text mb-4 drop-shadow-[0_0_15px_rgba(14,165,233,0.3)]">
                 <AnimatedCounter 
                   value={stat.value} 
                   prefix={stat.prefix}
@@ -123,10 +124,10 @@ export default function Stats() {
                   inView={inView}
                 />
               </div>
-              <div className="text-lg font-semibold text-text mb-1">
+              <div className="text-xl font-bold text-text mb-2">
                 {stat.label}
               </div>
-              <div className="text-sm text-muted">
+              <div className="text-base text-muted">
                 {stat.description}
               </div>
             </motion.div>

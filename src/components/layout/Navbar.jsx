@@ -27,7 +27,7 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className={`fixed top-4 left-4 right-4 z-50 rounded-2xl transition-all duration-300 ${
+        className={`fixed top-4 left-4 right-4 z-[100] rounded-2xl transition-all duration-300 ${
           isScrolled 
             ? 'glass shadow-lg shadow-black/20' 
             : 'bg-transparent'
@@ -83,7 +83,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-24 left-4 right-4 z-40 glass rounded-2xl p-6 md:hidden"
+            className="fixed top-24 left-4 right-4 z-[90] glass rounded-2xl p-6 md:hidden"
           >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
