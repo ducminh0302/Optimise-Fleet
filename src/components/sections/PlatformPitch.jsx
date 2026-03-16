@@ -67,7 +67,7 @@ export default function PlatformPitch() {
             One Platform for <span className="gradient-text">All Your Decisions</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            See how Astadeus empowers shipping companies to make smarter, faster decisions 
+            See how HullQ empowers shipping companies to make smarter, faster decisions 
             across the fleet by combining big data, AI, and human expertise.
           </p>
         </motion.div>

@@ -4,7 +4,7 @@ import { Quote, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const testimonials = [
   {
-    quote: "Astadeus has transformed how we manage our fleet. The AI-powered optimization has reduced our fuel consumption by 8% in just six months.",
+    quote: "HullQ has transformed how we manage our fleet. The AI-powered optimization has reduced our fuel consumption by 8% in just six months.",
     author: "Marcus Hansen",
     role: "Fleet Director",
     company: "Nordic Shipping Lines"
@@ -16,7 +16,7 @@ const testimonials = [
     company: "Pacific Marine Services"
   },
   {
-    quote: "Compliance reporting used to take days. With Astadeus, our CII and EU ETS reports are generated automatically and ready for audit within hours.",
+    quote: "Compliance reporting used to take days. With HullQ, our CII and EU ETS reports are generated automatically and ready for audit within hours.",
     author: "Thomas Mueller",
     role: "Sustainability Officer",
     company: "European Cargo Group"
@@ -65,7 +65,7 @@ export default function Testimonials() {
             Trusted by <span className="gradient-text">Industry Leaders</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Hear from maritime professionals who have transformed their operations with Astadeus.
+            Hear from maritime professionals who have transformed their operations with HullQ.
           </p>
         </motion.div>
 

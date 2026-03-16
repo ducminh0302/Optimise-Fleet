@@ -63,7 +63,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                 <Anchor className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-text">Astadeus</span>
+              <span className="text-xl font-bold text-text">HullQ</span>
             </a>
             <p className="text-muted text-sm leading-relaxed mb-6 max-w-sm">
               The all-in-one maritime intelligence platform. Optimize voyages, reduce emissions, 
@@ -136,7 +136,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-glass-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-subtle">
-            © {new Date().getFullYear()} Astadeus. All rights reserved.
+            © {new Date().getFullYear()} HullQ. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-muted hover:text-text transition-colors cursor-pointer">

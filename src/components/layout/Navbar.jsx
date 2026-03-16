@@ -42,7 +42,7 @@ export default function Navbar() {
                 </div>
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary to-accent opacity-50 blur-lg group-hover:opacity-80 transition-opacity" />
               </div>
-              <span className="text-xl font-bold text-text">Astadeus</span>
+              <span className="text-xl font-bold text-text">HullQ</span>
             </a>
 
             <div className="hidden md:flex items-center gap-8">

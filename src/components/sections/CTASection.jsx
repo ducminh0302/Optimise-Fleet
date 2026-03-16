@@ -87,7 +87,7 @@ export default function CTASection() {
             Ready to <span className="gradient-text">Transform Your Fleet?</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Book a personalized demo and discover how Astadeus can optimize your maritime operations.
+            Book a personalized demo and discover how HullQ can optimize your maritime operations.
           </p>
         </motion.div>
 
